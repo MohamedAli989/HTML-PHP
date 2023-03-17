@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+        <script lang="javascript">
+            function digaoi(nome){
+                console.log("Mensagem de boas vindas");
+
+                if(nome)
+                alert("Olá caro " + nome + " como vai?");
+                else
+                alert("ola, ola, ola, OLAAAAAAA");
+            }  
+            function cliquedobotao(){
+                let nome = document.getElementById('iNome').value;
+                digaoi(nome)
+            }
+            function resultado(op){
+                let n1 = parseFloat(document.getElementById('n1').value);
+                let n2 = parseFloat(document.getElementById('n2').value);
+
+                let res;
+                switch(op){
+                    case'+':
+                     res= n1 + n2;
+                    break;
+                    case'-':
+                    res= n1 - n2;
+                    break;
+                    case'*':
+                    res= n1 *n2;
+                    break;
+                    case'/':
+                    res= n1/n2;
+                }
+                alert(res);
+                let inputres= document.getElementById('res');
+                inputres.value = res;
+            }
+
+
+        </script>
+
+</head>
+<body>
+        <label>Informe o seu nome</label>
+        <input type="text" name="" id="iNome">
+    <button onclick="cliquedobotao()">Diga Olá!</button>
+    <input type="button" value="Diga olá2!" onclick="cliquedobotao"/>
+
+    <hr>
+    <input type="number" id="n1">
+    <input type="number" id="n2">
+    <br>resultado <input id="res" type="number" readonly/>
+
+    <button onclick="resultado('+')">+</button>
+    <button onclick="resultado('-')">-</button>
+    <button onclick="resultado('*')">*</button>
+    <button onclick="resultado('/')">/</button>
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+
+body{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    border-width:thin;
+    margin: 0em 0em 0em 0em;
+    border: 10px solid black;
+    padding: 0;
+    background: rgb(131,58,180);
+    background: radial-gradient(circle, rgba(131,58,180,1) 12%, rgba(99,199,164,1) 29%, rgba(97,251,151,1) 35%, rgba(254,133,69,1) 41%, rgba(253,29,29,1) 57%, rgba(252,176,69,1) 73%, rgba(69,252,219,0.8183474073223039) 94%); 
+}
+h1{
+    color: rgba(132, 42, 216, 0.918);
+    font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2{
+    color: blue;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#primeira{
+    color: aquamarine;
+    font-size: larger;
+    background-color: rgb(58, 99, 85);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+#topicos{
+    font-size: larger;
+color: bisque;
+background-color: azure;
+float: left;
+width: auto;
+padding: 10px 40px 10px 10px;
+
+}
+
+#principal{
+    float: left;
+    width: 60%;
+    text-align: left;
+}
+a{
+    text-decoration: none;
+}
+
+#pub{
+    float: right;
+    width: 20%;
+}
+#rodape{
+    background-color: rgb(224, 184, 146) ;
+    padding: 5px 10px 5px 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    clear: both;
+}
+
+
+img{
+    width: 400px;
+    height: 600px;
+
+}
+
+
+.pontos{
+    color: black;
+}
+
+div#topicos > ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+div#topicos > ul > li > a{
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+div#topicos > ul > li > a:hover {
+    background-color: black;
+    color: blueviolet;
+}
+
+.ativo{
+    background-color: rgba(135, 197, 135, 0.473);
+    color: aquamarine;
+}
